@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 50vw;
+    height: 60vh;
+    background-color: gray;
+    margin: 20px auto;
+    /* With display set to grid, items will be display in block 
+    and inline-grid then items will be display inline */
+    display: grid;
+    /*
+    To determine the numbers of row or columns can be specify 
+    by numbers, span, and percentage of the free space with a space that separate the values
+    */
+    /* grid-template-rows: row1 100px row2 100px row3 auto;
+    grid-template-columns: col1 50px col2 40px col3 40px; */
+
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    /* grid-template-rows: repeat(auto-fill, 100px); */
+}
+
+.container>* {
+    width: 40px;
+    height: 50px;
+}
+
+#item1 {
+    background-color: darkkhaki;
+}
+
+#item2 {
+    background-color: darkgreen;
+    /* grid-column-start: 3;
+    grid-column-end: 4; */
+}
+
+#item3 {
+    background-color: darkred;
+    
+}
+
+#item4 {
+    background-color: darkgoldenrod;
+    /* grid-row-start: 4;
+    grid-row-end: 6; */
+}
+
+#item5 {
+    background-color: darkslategrey;
+    /* grid-row-start: row2;
+    grid-row-end: row3; */
+}
+
+#item6 {
+    background-color: darkkhaki;
+}

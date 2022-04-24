@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px auto 50px;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto;
+}
+/* header and footer */
+header, footer {
+    background-color: rgb(88, 66, 10);
+}
+/* header only */
+header {
+    grid-area: header;
+}
+/* main */
+main {
+    background-color: darkslategrey;
+    grid-area: main;
+}
+
+/* footer only */
+footer {
+    grid-area: footer;
+}
